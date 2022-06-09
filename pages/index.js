@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Docker and Next
+          Docker and Next Hello World
         </h1>
 
         <p className={styles.description}>

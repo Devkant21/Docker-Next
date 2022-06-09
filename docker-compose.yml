@@ -2,7 +2,11 @@ version: '1'
 
 services:
   app:
-    image: docker_next
+    image: docker_next_d
     build: .
     ports:
       - 3000:3000
+    volumes:
+      - ./pages:/app/pages
+      - ./public:/app/public
+      - ./styles:/app/styles

@@ -6,6 +6,10 @@ The codebase of this repository is dockerized.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Devkant21/Docker-Next)
 
+### Blog
+
+[How to Dockerize a NextJs application](https://dev21.hashnode.dev/how-to-dockerize-a-nextjs-application)
+
 ## To contribute to this repository :
 
 - Fork the repository

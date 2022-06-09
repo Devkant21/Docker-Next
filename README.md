@@ -2,43 +2,28 @@
 
 The codebase of this repository is dockerized.
 
-## Steps :
+## To contribute to this repository :
 
-- Create a NextJs application.
+- Fork the repository
+- Clone it
   ```
-  npx create-next-app docker_next
+  git clone git@github.com:Devkant21/Docker-Next.git
   ```
-- Setup a Dockerfile in the root directory
+- To submit PR (pull request) create a branch
+  ```
+  git checkout -b <your branch name>
+  ```
+  ```
+  git add <filename>
+  ```
+  ```
+  git commit -m "commit message"
+  ```
+  ```
+  git remote add <your branch name> git@github.com:Devkant21/Docker-Next.git
+  ```
+  ```
+  git push <your branch name>
+  ```
 
-  - Contents of the Dockerfile :
-
-    ```
-    FROM node:current-alpine
-    WORKDIR /app
-
-    COPY package*.json ./
-    RUN yarn install
-
-    COPY . .
-    CMD ["yarn", "dev"]
-    ```
-
-- Setup a .dockerignore in the root directory
-
-  - Contents of the Dockerfile :
-
-    ```
-    # All files that are not required in our build
-    Dockerfile
-    .dockerignore
-    .gitignore
-
-    # Artifacts that'll be built during image creation
-    node_modules
-    ```
-
-## Build the docker image :
-
-    ```
-    docker build -t next-image
-    ```
+### Thanks
